@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "parcel index.html",
     "build": "mkdir -p dist/lottiefiles && cp lottiefiles/* dist/lottiefiles && parcel build index.html",
-    "hey": "parcel build lottiefiles/*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
