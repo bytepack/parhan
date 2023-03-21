@@ -1,0 +1,23 @@
+{
+  "name": "before",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "mkdir -p dist/lottiefiles && cp lottiefiles/* dist/lottiefiles && parcel build index.html",
+    "hey": "parcel build lottiefiles/*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+
+  "dependencies": {
+    "@lottiefiles/lottie-player": "^1.7.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "parcel-plugin-static-files-copy": "^2.6.0"
+  }
+}
