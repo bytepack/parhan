@@ -2,7 +2,6 @@
   "name": "before",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "parcel index.html",
     "build": "mkdir -p dist/lottiefiles && cp lottiefiles/* dist/lottiefiles && parcel build index.html",
