@@ -1,0 +1,166 @@
+@import "loading.css";
+@import "fonts.css";
+
+
+:root {
+    --skin-color: #f8c094;
+    --collar-color: #2b282f;
+    --collar-color-light: #cbc9ce;
+    --pants-color: #3f7498;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.body {
+    background-image: linear-gradient(180deg, rgba(255, 121, 0, 0.2), rgba(255, 121, 0, 0.05)),
+    url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% top;
+    min-height: 100vh;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.body--cloudy {
+    background-image: url("../images/bg.jpg");
+}
+
+.body--night {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("../images/bg.jpg");
+}
+
+.page {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.count-down {
+    padding: 5rem 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.count-down__number {
+    font-size: 4.8rem;
+    font-weight: 500;
+}
+
+.count-down__subtext {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.count-down__number, .count-down__subtext {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+    position: fixed;
+    bottom: 2.5rem;
+}
+
+.weather {
+    display: none;
+}
+
+.weather--show {
+    display: inline-block;
+}
+
+.weather__circle {
+    width: 5.5rem;
+    height: 5.5rem;
+    border: 2px solid #f8c094;
+    border-radius: 50%;
+    background-color: var(--pants-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.weather__today{
+    position: relative;
+    z-index: 10;
+}
+.weather__forecast{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    transition: opacity 0.6s;
+}
+
+.weather__forecast--hidden{
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.weather__forecast > *{
+    transition: transform 0.4s cubic-bezier(.8,-.5,.2,1.5); ;
+}
+
+
+.weather__forecast--hidden > *:nth-child(1) {
+    transform: translateY(calc(300% + 3rem));
+}
+
+.weather__forecast--hidden > *:nth-child(2) {
+    transform: translateY(calc(200% + 2rem));
+}
+
+.weather__forecast--hidden > *:nth-child(3) {
+    transform: translateY(calc(100% + 1rem));
+}
+
+.weather__circle--night {
+    background-color: var(--collar-color);
+}
+
+.weather__lottie {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+
+
+@media only screen and (min-width: 62em) {
+
+    .body {
+        background-position: 90% top;
+    }
+
+    .count-down {
+        gap: 4rem;
+    }
+
+    .count-down__number {
+        font-size: 8rem;
+    }
+
+    .count-down__subtext {
+        font-size: 2.1rem;
+    }
+}
+
+ /*TODO change background based on rain and snow and thunder and mist*/
+
+ /*TODO once a forecast item clicked, show the night forecast*/
+
+/* TODO show day for forecast items on the left side*/
+
+/*TODO rotate curent weather when clicked*/

@@ -3,13 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/favicon.png">
     <script type="module" src="js/script.js" defer></script>
     <title>PARHAN</title>
 
 </head>
 <body class="body">
+<div class="loading" data-loading>
+    <div class="loading__wrapper">
+        <div class="loading__inner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+
 <div class="page">
     <main class="main">
         <ul class="count-down">
@@ -33,7 +52,39 @@
     </main>
     <footer class="footer">
         <section class="weather">
-            <div class="weather__circle" data-weather="today">
+            <div class="weather__forecast weather__forecast--hidden">
+                <div class="weather__circle" data-weather="forecast">
+                    <lottie-player
+                            class="weather__lottie"
+                            autoplay
+                            loop
+                            mode="normal"
+                            src="lottiefiles/11d.json"
+                    >
+                    </lottie-player>
+                </div>
+                <div class="weather__circle" data-weather="forecast">
+                    <lottie-player
+                            class="weather__lottie"
+                            autoplay
+                            loop
+                            mode="normal"
+                            src="lottiefiles/11d.json"
+                    >
+                    </lottie-player>
+                </div>
+                <div class="weather__circle" data-weather="forecast">
+                    <lottie-player
+                            class="weather__lottie"
+                            autoplay
+                            loop
+                            mode="normal"
+                            src="lottiefiles/11d.json"
+                    >
+                    </lottie-player>
+                </div>
+            </div>
+            <div class="weather__today weather__circle" data-weather="today">
                 <lottie-player
                         class="weather__lottie"
                         autoplay
@@ -43,7 +94,6 @@
                 >
                 </lottie-player>
             </div>
-
         </section>
     </footer>
 </div>

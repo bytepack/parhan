@@ -1,6 +1,7 @@
 import {setupCounter} from "./count-down.js";
 import {setupWeather} from "./weather.js";
 
+
 setupCounter()
 setupWeather()
 

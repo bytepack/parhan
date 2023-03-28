@@ -10,9 +10,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-
   "dependencies": {
-    "@lottiefiles/lottie-player": "^1.7.1"
+    "@lottiefiles/lottie-player": "^1.7.1",
+    "date-fns": "^2.29.3"
   },
   "devDependencies": {
     "parcel": "^2.8.3",
