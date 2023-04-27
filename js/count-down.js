@@ -1,4 +1,4 @@
-const expiration = new Date(2023, 3, 27, 1, 48)
+const expiration = new Date(2023, 4, 24, 1, 48)
 
 const days = document.querySelector(".count-down__days")
 const hours = document.querySelector(".count-down__hours")
